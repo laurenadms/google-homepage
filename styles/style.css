@@ -1,6 +1,8 @@
-
-.top-left-nav {
+body {
+    width: auto;
     background-color: white;
+    padding: 0 20px 20px 20px;
+    border: none;
 }
 
 .top-left-nav a {
@@ -46,10 +48,6 @@
     min-height: auto;
 }
 
-.google-logo {
-    margin: 0px;
-    width: auto;
-}
 
 .main-search {
     display: block;
@@ -63,11 +61,4 @@
 .main-search:hover {
     box-shadow: grey;
 
-}
-
-body {
-    width: auto;
-    background-color: white;
-    padding: 0 20px 20px 20px;
-    border: none;
 }
