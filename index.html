@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <title>Google</title>
     <link href="styles/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6983ef688b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-<header>
-    <div class="top-left-nav"> 
-        <a href="">About</a>
-        <a href="">Store</a>
-    </div>
-
-    <div class="top-right-nav">
-        <a href="">Gmail</a>
-        <a href="">Images</a>
-        <img src="" alt="App menu" id="app-menu">
-        <img src="" alt="User icon" id="user-icon">
-    </div>
-</header>
+    <ul class="nav" role="navigation"> 
+        <li href="">About</li>
+        <li href="">Store</li>
+        <div class="nav-right">
+            <li href="">Gmail</li>
+            <li href="">Images</li>
+            <li href=""><i class="fas fa-bars fa-lg"></i></li>
+            <a href=""><button type="button" id="sign-in-btn">Sign In</button></a>
+        </div>
+    </ul>
 
     <div class="center">
-    <img src="/images/google-logo.png" alt="Google logo">
-    <input type="text" placeholder="Search" class="main-search">
+        <img src="/images/google-logo.png" alt="Google logo">
     </div>
+
+    <div class="search-container">
+         <input type="text" placeholder="Search" class="main-search">
+    </div>
+    
+
 </body>
