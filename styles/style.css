@@ -8,7 +8,7 @@ ul {
     list-style: none;
 }
 
-.nav {
+.nav, .footer {
     display: flex;
     align-items: center;
     padding: 6px;
@@ -23,11 +23,11 @@ ul {
     cursor: pointer;
 }
 
-.nav li:hover {
+.nav li:hover, .footer li:hover {
     text-decoration: underline;
 }
 
-.nav-right {
+.nav-right, .footer-right {
     margin-left: auto;
     margin-right: 10px;
     display: inline-flex;
@@ -55,9 +55,8 @@ ul {
 }
 
 
-
-
 /* logo and search area */
+
 .center {
     text-align: center;
     padding-top: 120px;
@@ -71,9 +70,9 @@ ul {
 .main-search {
     width: 35%;
     border-radius: 20px;
-    border: 1px solid rgb(192, 192, 192);
+    border: 1px solid rgb(221, 221, 221);
     text-indent: 30px;
-    padding: 12px;
+    padding: 11px;
 }
 
 .main-search:hover {
@@ -90,13 +89,63 @@ ul {
     position: absolute;
     padding: 12px;
     min-width: 25px;
-    text-align: unset;
+
 }
 
 .icon-mic {
     color:rgb(32, 153, 240);
-    position: absolute;
+    position: relative;
     padding: 12px;
     min-width: 0px;
-    text-align: unset;
+}
+
+.icon-mic:hover {
+    color: rgb(37, 133, 241);
+}
+
+.search-buttons {
+    padding: 0px 16px;
+    margin: 15px 4px;
+}
+
+.button1, .button2 {
+    cursor: pointer;
+    background-color:#f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    padding: 0 17px;
+    line-height: 27px;
+    min-width: 54px;
+    height: 36px;
+    text-align: center;
+}
+
+.button1:hover, .button2:hover {
+    border: 1px solid rgb(219, 219, 219);
+    box-shadow: 0 0 1px rgb(194, 194, 194);
+
+}
+
+
+/* footer */
+
+.footer {
+    position: fixed;
+    display: flex;
+    background-color: rgb(245, 245, 245);
+    border-top: 1px solid rgb(224, 224, 224);
+    width: 100%;
+    bottom: 0;
+    height: 40px;
+    left: 0;
+    margin-bottom: 0px;
+}
+
+.footer li {
+    font-size: 14px;
+    padding: 15px;
+    color: #7e7e7e;
+    text-decoration: none;
+    cursor: pointer;
 }
