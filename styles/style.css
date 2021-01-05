@@ -16,30 +16,35 @@ ul {
 }
 
 .nav li {
-    font-size: 13px;
+    font-size: 14px;
     padding: 15px;
     color: #525252;
     text-decoration: none;
     cursor: pointer;
 }
 
-.nav:hover li {
+.nav li:hover {
     text-decoration: underline;
 }
 
 .nav-right {
     margin-left: auto;
-    margin-right: 0;
+    margin-right: 10px;
     display: inline-flex;
 }
 
+.nav i:hover {
+    background-color: rgb(226, 226, 226);
+    border-radius: 50%;
+}
+
 #sign-in-btn {
-    padding: 10px 20px;
+    padding: 10px 30px;
     color: white;
     background-color: #1a73e8;
     border: none;
     border-radius: 3px;
-    margin: 10px;
+    margin: 5px;
     cursor: pointer;
 }
 
@@ -48,6 +53,8 @@ ul {
     box-shadow: 0 0 5px rgb(168, 175, 180);
     text-decoration: underline;
 }
+
+
 
 
 /* logo and search area */
@@ -72,4 +79,24 @@ ul {
 .main-search:hover {
     box-shadow: 0 0 5px rgb(219, 219, 219);
 
+}
+
+.main-search:focus {
+    outline: none;
+}
+
+.icon {
+    color:rgb(168, 175, 180);
+    position: absolute;
+    padding: 12px;
+    min-width: 25px;
+    text-align: unset;
+}
+
+.icon-mic {
+    color:rgb(32, 153, 240);
+    position: absolute;
+    padding: 12px;
+    min-width: 0px;
+    text-align: unset;
 }
